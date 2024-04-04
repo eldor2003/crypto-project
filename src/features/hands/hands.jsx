@@ -47,6 +47,7 @@ class Hands extends React.Component {
 						position: "absolute",
 						top: "680px",
 						left: "-110px",
+						transition: "transform 1000ms ease-in-out",
 						// marginBottom: 50
 					}}
 					id={"leftArm"}
@@ -59,6 +60,7 @@ class Hands extends React.Component {
 						display: "flex",
 						justifyContent: "end",
 						alignItems: "end",
+						transition: "transform 1000ms ease-in-out",
 						padding: 0,
 						position: "absolute",
 						top: "680px",
@@ -82,6 +84,7 @@ class Hands extends React.Component {
 						position: "absolute",
 						top: "110px",
 						left: "75%",
+						transition: "transform 1000ms ease-in-out",
 
 						// marginBottom: 50
 					}}
