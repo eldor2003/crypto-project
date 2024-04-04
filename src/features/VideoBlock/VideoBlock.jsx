@@ -17,6 +17,7 @@ const VideoBlock = () => {
 		<Box
 			sx={{
 				display: "flex",
+				userSelect: "none",
 				flexDirection: "column",
 				alignItems: "center",
 				marginBottom: "90px",
