@@ -16,7 +16,6 @@
 }
 .right_buttons {
 	display: flex;
-	align-items: center;
 	gap: 5px;
 }
 .login {
