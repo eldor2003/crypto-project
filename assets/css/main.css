@@ -1341,7 +1341,7 @@ header .market {
     height: 31.43px;
   }
   .profit .method_images .img_item img {
-    max-width: 19px;
+    max-width: 100%;
   }
   .profit .pay_title {
     color: rgb(255, 255, 255);
