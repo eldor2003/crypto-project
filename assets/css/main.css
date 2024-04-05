@@ -225,7 +225,6 @@ header .header_block {
   -webkit-backdrop-filter: blur(177.8px);
           backdrop-filter: blur(177.8px);
   background: rgba(19, 31, 65, 0.51);
-  background: rgba(63, 84, 142, 0.51);
   display: flex;
   align-items: center;
   justify-content: space-between;
