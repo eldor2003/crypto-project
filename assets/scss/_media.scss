@@ -22,24 +22,284 @@
 	.container {
 		max-width: 1140px;
 	}
+	.hands_block .left_hand {
+		top: 725px;
+		left: -150px;
+		&.active {
+			left: -70px;
+		}
+		img {
+			width: 400px;
+		}
+	}
+	.hands_block .right_hand {
+		right: -200px;
+		img {
+			width: 500px;
+		}
+		&.active {
+			right: -150px;
+		}
+	}
 }
 @media (max-width: 1200px) {
 	.container {
 		max-width: 960px;
+	}
+	.hero .hero_title {
+		font-size: 48px;
+		margin: 0 auto 25px auto;
+	}
+	.profit .profit_calculator {
+		width: 100%;
+	}
+	.profit .profit_block {
+		flex-direction: column-reverse;
+	}
+	.profit_payment {
+		width: 68%;
+		margin: 0 auto;
+	}
+	.profit {
+		margin-bottom: 50px;
 	}
 }
 @media (max-width: 992px) {
 	.container {
 		max-width: 720px;
 	}
+	.video .video_block iframe {
+		width: 100%;
+		object-fit: cover;
+	}
+	.referal_block {
+		flex-wrap: wrap;
+		gap: 35px 0;
+	}
+	.referal .referal_item {
+		width: 48%;
+		min-height: 260px;
+	}
+	.profit_payment {
+		width: 87%;
+	}
+	.trading .trading_block {
+		gap: 30px;
+	}
+	header .header_navs {
+		gap: 15px;
+	}
+	.video .video_title {
+		margin-bottom: 30px;
+	}
+	.hero .core_img img {
+		width: 200px;
+	}
+	header .market {
+		width: 80px;
+		padding: 6px 0;
+	}
+	header .login {
+		width: 80px;
+		padding: 6px 0;
+	}
+	.hands_block .left_hand {
+		top: 600px;
+		left: -100px;
+		&.active {
+			left: -70px;
+		}
+		img {
+			width: 300px;
+		}
+	}
+	.hands_block .right_hand {
+		top: 360px;
+		right: -100px;
+		img {
+			width: 300px;
+		}
+		&.active {
+			right: -70px;
+		}
+	}
 }
 @media (max-width: 768px) {
 	.container {
 		max-width: 540px;
 	}
+	.trading {
+		margin-bottom: 70px;
+	}
+	.profit_payment {
+		width: 100%;
+	}
+	.header_navs {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		top: 0;
+		right: -100%;
+		z-index: 4;
+		width: 50%;
+		padding-top: 100px;
+		height: 100vh;
+		z-index: 4;
+		background-color: #614848;
+	}
+	.trading .trading_left {
+		width: 100%;
+	}
+	.trading .trading_block {
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+	.video {
+		margin-bottom: 70px;
+	}
+	.video .video_title {
+		font-size: 35px;
+	}
 }
 @media (max-width: 576px) {
 	.container {
 		max-width: 100%;
+		padding: 0 25px;
+	}
+	header {
+		margin: 40px 0 75px 0;
+	}
+	.referal .referal_title {
+		font-size: 35px;
+		margin-bottom: 35px;
+	}
+	.profit .profit_title {
+		font-size: 35px;
+		margin-bottom: 25px;
+	}
+	.referal .referal_item {
+		width: 100%;
+		min-height: 260px;
+	}
+
+	.profit .prof_desc {
+		font-size: 16px;
+	}
+	.profit .method_name {
+		font-size: 11px;
+	}
+	.profit .method_block {
+		padding: 15px 20px 20px 15px;
+	}
+	.profit .method_images .img_item {
+		width: 31.38px;
+		height: 31.43px;
+		img {
+			max-width: 19px;
+		}
+	}
+	.profit .pay_title {
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.profit .count_pay {
+		font-size: 10.46px;
+		line-height: 14.38px;
+	}
+	.profit .name_pay {
+		font-size: 7.84px;
+	}
+	.profit .type_img img,
+	.profit .type_img {
+		width: 30px;
+	}
+	.profit .types_money span {
+		font-size: 9.15px;
+	}
+	.payment_circle {
+		max-width: 500px;
+	}
+	.profit .pay_block {
+		padding: 15px;
+	}
+	.trading .moment {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 25px;
+	}
+	.trading .trading_left_title {
+		font-size: 35px;
+		margin-bottom: 25px;
+	}
+	.trading .trading_left_desc {
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
+	.trading .right_name {
+		font-size: 18px;
+	}
+	.trading .right_desc {
+		font-size: 16px;
+	}
+	.profit .calc {
+		padding: 8px 0px;
+		font-size: 10px;
+		line-height: 15px;
+		border-radius: 7.37px;
+		width: 60px;
+	}
+	.language img {
+		width: 35px;
+	}
+
+	.profit .profit_form {
+		gap: 10px;
+		margin-bottom: 25px;
+	}
+	.profit .calc_bottom button {
+		padding: 6px 17px;
+	}
+	.profit .calc_bottom p {
+		font-size: 10px;
+	}
+	.hero .hero_title {
+		font-size: 35px;
+		max-width: 80%;
+		margin: 0 auto 25px auto;
+	}
+	.hero .hero_desc {
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+	.hero .hero_buttons {
+		margin-bottom: 150px;
+	}
+	.hands_block .left_hand {
+		top: 700px;
+		left: -50px;
+		&.active {
+			left: -25px;
+		}
+		img {
+			width: 200px;
+		}
+	}
+	.hero {
+		margin-bottom: 110px;
+	}
+	.hands_block .right_hand {
+		top: 500px;
+		right: -50px;
+		img {
+			width: 200px;
+		}
+		&.active {
+			right: -10px;
+		}
+	}
+	.hero .core_img img {
+		width: 130px;
 	}
 }
