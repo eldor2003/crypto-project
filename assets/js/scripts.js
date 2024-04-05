@@ -1,14 +1,20 @@
 $(document).ready(function () {
 	// hamburger
-	$(".hamurger_menu").on("click", function (e) {
+	$(".hamburger_icon a").on("click", function (e) {
 		e.preventDefault();
-		$(".header_menus").addClass("active");
+		$(".mobile_block").addClass("active");
 	});
 
-	$(".close").on("click", function (e) {
+	$(".close , .mobile_navigation li a").on("click", function (e) {
 		e.preventDefault();
-		$(".header_menus").removeClass("active");
+		$(".mobile_block").removeClass("active");
 	});
+
+	// $(".mobile_navigation li a").on("click", function (e) {
+	// 	e.preventDefault();
+	// 	$(".mobile_navigation li a").removeClass("active");
+	// 	$(this).addClass("active");
+	// });
 
 	// header navs
 	$(".header_navs li a").on("click", function (e) {
@@ -64,26 +70,12 @@ $(document).ready(function () {
 	// calculator
 	$(".calc_bottom button").on("click", function (e) {
 		e.preventDefault();
-		let cellsCost = 1; // Cost per cell
-		let tonAmount = document.querySelector("input[type=amount]"); // Deposit
+		let tonAmount = document.querySelector(".amount").value * 1; // Deposit
 		let cellsProfit = 0.02; // Profit margin per cell
 
-		let laps = document.querySelector("input[type=laps]"); // Number of purchases
-
-		function calc(cellsCost, tonAmount, cellsProfit, laps) {
-			if (laps === 0) {
-				let cellsAmount = tonAmount / cellsCost;
-				let result = tonAmount + cellsProfit * cellsCost * cellsAmount;
-				return result;
-			} else {
-				let cellsAmount = tonAmount / cellsCost;
-				let balance = tonAmount + cellsProfit * cellsCost * cellsAmount;
-				return calc(cellsCost, balance, cellsProfit, laps - 1);
-			}
-		}
-
-		let res = calc(cellsCost, tonAmount, cellsProfit, laps);
-		$("input[type=result]").val(Number(res));
-		console.log(res);
+		let laps = document.querySelector(".laps").value * 1; // Number of purchases
+		let result = (tonAmount + cellsProfit).toFixed(2);
+		alert(result);
+		$(".result").val();
 	});
 });

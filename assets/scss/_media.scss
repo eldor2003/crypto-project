@@ -77,6 +77,13 @@
 	.footer .footer_desc {
 		max-width: 230px;
 	}
+	.partners .partner_name {
+		font-size: 25px;
+	}
+	.partners .partner_block {
+		gap: 30px 35px;
+		justify-content: center;
+	}
 	.video .video_block iframe {
 		width: 100%;
 		object-fit: cover;
@@ -84,9 +91,11 @@
 	.referal_block {
 		flex-wrap: wrap;
 		gap: 35px 0;
+		flex-direction: column;
+		align-items: center;
 	}
 	.referal .referal_item {
-		width: 48%;
+		width: 60%;
 		min-height: 260px;
 	}
 	.profit_payment {
@@ -137,9 +146,90 @@
 	.container {
 		max-width: 540px;
 	}
+	.profit .right_icon {
+		right: 0;
+	}
+	.profit .left_icon {
+		top: 20px;
+		left: 0;
+	}
+	.mobile_block {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 5;
+		// border-radius: 20px;
 
+		box-shadow: 6.9px 7.67px 48.29px 0px rgba(0, 0, 0, 0.24);
+		background: linear-gradient(
+				153.92deg,
+				rgba(255, 255, 255, 0) -380.161%,
+				rgb(20, 16, 29) 97.32%
+			),
+			rgb(46, 46, 72);
+		height: 100vh;
+		width: 50%;
+		padding: 25px;
+		transition: all ease-in 0.2s;
+		&.active {
+			right: 0;
+		}
+		.logo_name {
+			background: linear-gradient(
+				91.68deg,
+				rgb(44, 159, 219),
+				rgb(87, 77, 206)
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			font-size: 18.5px;
+			font-weight: 800;
+			line-height: 28px;
+		}
+		.mobile_top {
+			margin-bottom: 55px;
+		}
+		.mobile_navigation {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			align-items: end;
+			li {
+				width: 100%;
+			}
+			li a {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				color: rgb(137, 155, 199);
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 24px;
+				padding: 10px;
+				justify-content: end;
+
+				&.active {
+					color: rgb(255, 255, 255);
+					position: relative;
+
+					&::before {
+						content: "";
+						width: 1px;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 2;
+						background-color: #2c9fdb;
+					}
+				}
+			}
+		}
+	}
 	.partners .partner_block {
-		gap: 30px 17px;
+		gap: 30px 25px;
 	}
 	.footer .footer_top {
 		padding-bottom: 35px;
@@ -186,6 +276,12 @@
 	.container {
 		max-width: 100%;
 		padding: 0 25px;
+	}
+	.payment_circle img {
+		width: 100%;
+	}
+	.mobile_block {
+		width: 100%;
 	}
 	.footer .footer_top {
 		gap: 30px 0;

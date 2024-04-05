@@ -52,6 +52,11 @@ header {
 		padding: 10px 0;
 		width: 130px;
 		text-align: center;
+		transition: all ease-in 0.1s;
+		&:hover {
+			background: #fff;
+			color: #000;
+		}
 	}
 	.market {
 		color: rgb(5, 5, 5);
@@ -132,6 +137,14 @@ header {
 			rgb(44, 159, 219) 25.94%,
 			rgb(87, 77, 206) 94.317%
 		);
+		transition: all ease-in 0.3s;
+		&:hover {
+			background: linear-gradient(
+				91.68deg,
+				rgb(17 99 142) 25.94%,
+				rgb(16 0 203) 94.317%
+			);
+		}
 	}
 	.hero_join {
 		padding: 17px 30px;
@@ -143,6 +156,11 @@ header {
 		border-radius: 5px;
 		backdrop-filter: blur(74.6px);
 		border: 1px solid #2c9fdb;
+		transition: all ease-in 0.2s;
+		&:hover {
+			background: #2c9fdb;
+			color: #fff;
+		}
 	}
 	.core_img {
 		img {
@@ -223,6 +241,14 @@ header {
 		font-weight: 400;
 		line-height: 27px;
 		padding: 20px 0;
+		transition: all ease-in 0.1s;
+		&:hover {
+			background: linear-gradient(
+				91.68deg,
+				rgb(17 99 142) 25.94%,
+				rgb(16 0 203) 94.317%
+			);
+		}
 	}
 	.trading_right {
 		gap: 25px;
@@ -387,6 +413,14 @@ header {
 				rgb(44, 159, 219) 25.965%,
 				rgb(87, 77, 206) 94.303%
 			);
+			transition: all ease-in 0.1s;
+			&:hover {
+				background: linear-gradient(
+					91.68deg,
+					rgb(17 99 142) 25.94%,
+					rgb(16 0 203) 94.317%
+				);
+			}
 		}
 		p {
 			color: rgb(137, 155, 199);
@@ -472,7 +506,7 @@ header {
 		z-index: 3;
 		padding: 25px 25px 35px 25px;
 		border-radius: 20px;
-		transform: rotate(4deg);
+		transform: rotate(6deg);
 		backdrop-filter: blur(10px);
 		background: linear-gradient(
 			149.31deg,
@@ -489,16 +523,17 @@ header {
 	}
 	.method_images {
 		display: flex;
-		gap: 10px;
-		.img_item {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 48px;
-			height: 48px;
-			border-radius: 10px;
-			background: rgb(255, 255, 255);
-		}
+		gap: 7px;
+	}
+	.left_icon {
+		position: absolute;
+		top: 40px;
+		left: -75px;
+	}
+	.right_icon {
+		position: absolute;
+		bottom: 40px;
+		right: -75px;
 	}
 }
 
@@ -573,6 +608,14 @@ header {
 			rgb(44, 159, 219) 25.932%,
 			rgb(87, 77, 206) 94.321%
 		);
+		transition: all ease-in 0.1s;
+		&:hover {
+			background: linear-gradient(
+				91.68deg,
+				rgb(17 99 142) 25.94%,
+				rgb(16 0 203) 94.317%
+			);
+		}
 	}
 	.diff_block {
 		border-radius: 10px;

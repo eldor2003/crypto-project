@@ -272,6 +272,11 @@ header .login {
   padding: 10px 0;
   width: 130px;
   text-align: center;
+  transition: all ease-in 0.1s;
+}
+header .login:hover {
+  background: #fff;
+  color: #000;
 }
 header .market {
   color: rgb(5, 5, 5);
@@ -346,6 +351,10 @@ header .market {
   -webkit-backdrop-filter: blur(74.6px);
           backdrop-filter: blur(74.6px);
   background: linear-gradient(91.68deg, rgb(44, 159, 219) 25.94%, rgb(87, 77, 206) 94.317%);
+  transition: all ease-in 0.3s;
+}
+.hero .hero_market:hover {
+  background: linear-gradient(91.68deg, rgb(17, 99, 142) 25.94%, rgb(16, 0, 203) 94.317%);
 }
 .hero .hero_join {
   padding: 17px 30px;
@@ -358,6 +367,11 @@ header .market {
   -webkit-backdrop-filter: blur(74.6px);
           backdrop-filter: blur(74.6px);
   border: 1px solid #2c9fdb;
+  transition: all ease-in 0.2s;
+}
+.hero .hero_join:hover {
+  background: #2c9fdb;
+  color: #fff;
 }
 .hero .core_img img {
   transition: transform 1000ms ease-in-out;
@@ -430,6 +444,10 @@ header .market {
   font-weight: 400;
   line-height: 27px;
   padding: 20px 0;
+  transition: all ease-in 0.1s;
+}
+.trading .trading_left_btn:hover {
+  background: linear-gradient(91.68deg, rgb(17, 99, 142) 25.94%, rgb(16, 0, 203) 94.317%);
 }
 .trading .trading_right {
   gap: 25px;
@@ -587,6 +605,10 @@ header .market {
   -webkit-backdrop-filter: blur(74.6px);
           backdrop-filter: blur(74.6px);
   background: linear-gradient(91.68deg, rgb(44, 159, 219) 25.965%, rgb(87, 77, 206) 94.303%);
+  transition: all ease-in 0.1s;
+}
+.profit .calc_bottom button:hover {
+  background: linear-gradient(91.68deg, rgb(17, 99, 142) 25.94%, rgb(16, 0, 203) 94.317%);
 }
 .profit .calc_bottom p {
   color: rgb(137, 155, 199);
@@ -668,7 +690,7 @@ header .market {
   z-index: 3;
   padding: 25px 25px 35px 25px;
   border-radius: 20px;
-  transform: rotate(4deg);
+  transform: rotate(6deg);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background: linear-gradient(149.31deg, rgb(255, 255, 255) -239.362%, rgb(20, 16, 29) 66.064%);
@@ -682,16 +704,17 @@ header .market {
 }
 .profit .method_images {
   display: flex;
-  gap: 10px;
+  gap: 7px;
 }
-.profit .method_images .img_item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
-  background: rgb(255, 255, 255);
+.profit .left_icon {
+  position: absolute;
+  top: 40px;
+  left: -75px;
+}
+.profit .right_icon {
+  position: absolute;
+  bottom: 40px;
+  right: -75px;
 }
 
 .referal {
@@ -756,6 +779,10 @@ header .market {
   -webkit-backdrop-filter: blur(74.6px);
           backdrop-filter: blur(74.6px);
   background: linear-gradient(91.68deg, rgb(44, 159, 219) 25.932%, rgb(87, 77, 206) 94.321%);
+  transition: all ease-in 0.1s;
+}
+.referal .ref_btn:hover {
+  background: linear-gradient(91.68deg, rgb(17, 99, 142) 25.94%, rgb(16, 0, 203) 94.317%);
 }
 .referal .diff_block {
   border-radius: 10px;
@@ -1015,6 +1042,13 @@ header .market {
   .footer .footer_desc {
     max-width: 230px;
   }
+  .partners .partner_name {
+    font-size: 25px;
+  }
+  .partners .partner_block {
+    gap: 30px 35px;
+    justify-content: center;
+  }
   .video .video_block iframe {
     width: 100%;
     -o-object-fit: cover;
@@ -1023,9 +1057,11 @@ header .market {
   .referal_block {
     flex-wrap: wrap;
     gap: 35px 0;
+    flex-direction: column;
+    align-items: center;
   }
   .referal .referal_item {
-    width: 48%;
+    width: 60%;
     min-height: 260px;
   }
   .profit_payment {
@@ -1076,8 +1112,77 @@ header .market {
   .container {
     max-width: 540px;
   }
+  .profit .right_icon {
+    right: 0;
+  }
+  .profit .left_icon {
+    top: 20px;
+    left: 0;
+  }
+  .mobile_block {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 5;
+    box-shadow: 6.9px 7.67px 48.29px 0px rgba(0, 0, 0, 0.24);
+    background: linear-gradient(153.92deg, rgba(255, 255, 255, 0) -380.161%, rgb(20, 16, 29) 97.32%), rgb(46, 46, 72);
+    height: 100vh;
+    width: 50%;
+    padding: 25px;
+    transition: all ease-in 0.2s;
+  }
+  .mobile_block.active {
+    right: 0;
+  }
+  .mobile_block .logo_name {
+    background: linear-gradient(91.68deg, rgb(44, 159, 219), rgb(87, 77, 206));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 18.5px;
+    font-weight: 800;
+    line-height: 28px;
+  }
+  .mobile_block .mobile_top {
+    margin-bottom: 55px;
+  }
+  .mobile_block .mobile_navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: end;
+  }
+  .mobile_block .mobile_navigation li {
+    width: 100%;
+  }
+  .mobile_block .mobile_navigation li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(137, 155, 199);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 10px;
+    justify-content: end;
+  }
+  .mobile_block .mobile_navigation li a.active {
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+  .mobile_block .mobile_navigation li a.active::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #2c9fdb;
+  }
   .partners .partner_block {
-    gap: 30px 17px;
+    gap: 30px 25px;
   }
   .footer .footer_top {
     padding-bottom: 35px;
@@ -1124,6 +1229,12 @@ header .market {
   .container {
     max-width: 100%;
     padding: 0 25px;
+  }
+  .payment_circle img {
+    width: 100%;
+  }
+  .mobile_block {
+    width: 100%;
   }
   .footer .footer_top {
     gap: 30px 0;
