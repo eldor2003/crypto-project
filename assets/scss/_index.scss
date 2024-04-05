@@ -163,6 +163,12 @@ header {
 		}
 	}
 	.core_img {
+		transition: transform 1000ms ease-in-out;
+		&.active {
+			img {
+				transform: rotate(70deg) scale(1.25);
+			}
+		}
 		img {
 			transition: transform 1000ms ease-in-out;
 			&:hover {

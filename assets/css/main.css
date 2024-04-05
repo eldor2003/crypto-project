@@ -373,6 +373,12 @@ header .market {
   background: #2c9fdb;
   color: #fff;
 }
+.hero .core_img {
+  transition: transform 1000ms ease-in-out;
+}
+.hero .core_img.active img {
+  transform: rotate(70deg) scale(1.25);
+}
 .hero .core_img img {
   transition: transform 1000ms ease-in-out;
 }

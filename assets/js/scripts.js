@@ -82,16 +82,26 @@ $(document).ready(function () {
 	const mediaQuery = window.matchMedia("(max-width: 576px)");
 	// Check if the media query is true
 	if (mediaQuery.matches) {
+		var lastScrollTop = 0;
 		$(window).scroll(function (event) {
 			var scroll = $(window).scrollTop();
-			console.log(scroll);
-			if (scroll > 900) {
+			var currentScrollTop = $(this).scrollTop();
+			// Determine scroll direction
+			if (currentScrollTop > lastScrollTop && scroll > 0) {
+				// Downscroll code
+				$(".left_hand").addClass("active");
+				$(".right_hand").addClass("active");
+				$(".core_img ").addClass("active");
+				console.log("Scrolling down");
+			} else {
+				// Upscroll code
 				$(".left_hand").removeClass("active");
 				$(".right_hand").removeClass("active");
-			} else if (scroll < 900) {
-				$(".left_hand").toggleClass("active");
-				$(".right_hand").toggleClass("active");
+				$(".core_img ").removeClass("active");
+				console.log("Scrolling up");
 			}
+			lastScrollTop = currentScrollTop;
+			// console.log(scroll);
 		});
 	}
 });
