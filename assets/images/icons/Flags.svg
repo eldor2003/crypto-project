@@ -1,0 +1,16 @@
+<svg width="42.000000" height="30.000000" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_260">
+			<rect id="Flags" width="42.000000" height="30.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Flags" width="42.000000" height="30.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip2_260)">
+		<path id="Vector" d="M0 0L18 0L18 14L0 14L0 0Z" fill="#1A47B8" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M18 0L18 2L42 2L42 0L18 0ZM18 4L18 6L42 6L42 4L18 4ZM18 8L18 10L42 10L42 8L18 8ZM18 12L18 14L42 14L42 12L18 12ZM0 16L0 18L42 18L42 16L0 16ZM0 20L0 22L42 22L42 20L0 20ZM0 24L0 26L42 26L42 24L0 24ZM0 28L0 30L42 30L42 28L0 28Z" fill="#F93939" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M2 2L2 4L4 4L4 2L2 2ZM6 2L6 4L8 4L8 2L6 2ZM10 2L10 4L12 4L12 2L10 2ZM14 2L14 4L16 4L16 2L14 2ZM12 4L12 6L14 6L14 4L12 4ZM8 4L8 6L10 6L10 4L8 4ZM4 4L4 6L6 6L6 4L4 4ZM2 6L2 8L4 8L4 6L2 6ZM6 6L6 8L8 8L8 6L6 6ZM10 6L10 8L12 8L12 6L10 6ZM14 6L14 8L16 8L16 6L14 6ZM2 10L2 12L4 12L4 10L2 10ZM6 10L6 12L8 12L8 10L6 10ZM10 10L10 12L12 12L12 10L10 10ZM14 10L14 12L16 12L16 10L14 10ZM12 8L12 10L14 10L14 8L12 8ZM8 8L8 10L10 10L10 8L8 8ZM4 8L4 10L6 10L6 8L4 8Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
