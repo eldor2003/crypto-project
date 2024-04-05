@@ -250,8 +250,8 @@ header {
 		border-radius: 50%;
 		flex: 0 0 auto;
 		background: rgba(9, 151, 124, 0.1);
-		background: rgba(18, 93, 79, 0.836);
 	}
+
 	.right_name {
 		color: rgb(255, 255, 255);
 		font-size: 20px;
@@ -281,6 +281,22 @@ header {
 		backdrop-filter: blur(177.8px);
 		padding: 20px;
 		background: rgba(26, 29, 37, 0.31);
+	}
+	.profit_title {
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 115%;
+		margin-bottom: 25px;
+		max-width: 530px;
+		color: #fff;
+	}
+	.prof_desc {
+		color: rgba(255, 255, 255, 0.4);
+		font-family: "Mulish";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 140%;
+		margin-bottom: 50px;
 	}
 	.calc_top {
 		margin-bottom: 30px;

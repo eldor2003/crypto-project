@@ -46,6 +46,9 @@
 	.container {
 		max-width: 960px;
 	}
+	body {
+		background-size: cover;
+	}
 	.hero .hero_title {
 		font-size: 48px;
 		margin: 0 auto 25px auto;
@@ -67,6 +70,12 @@
 @media (max-width: 992px) {
 	.container {
 		max-width: 720px;
+	}
+	.footer {
+		padding: 20px;
+	}
+	.footer .footer_desc {
+		max-width: 230px;
 	}
 	.video .video_block iframe {
 		width: 100%;
@@ -128,7 +137,18 @@
 	.container {
 		max-width: 540px;
 	}
-	.trading {
+
+	.partners .partner_block {
+		gap: 30px 17px;
+	}
+	.footer .footer_top {
+		padding-bottom: 35px;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+	}
+	.trading,
+	.partners,
+	.faq {
 		margin-bottom: 70px;
 	}
 	.profit_payment {
@@ -167,8 +187,80 @@
 		max-width: 100%;
 		padding: 0 25px;
 	}
+	.footer .footer_top {
+		gap: 30px 0;
+	}
+	.footer .footer_item {
+		width: 100%;
+	}
+	.referal {
+		margin-bottom: 70px;
+	}
+	.footer .copyright,
+	.footer .gate {
+		font-size: 16px;
+	}
+	.footer {
+		padding: 20px 0;
+	}
+	.footer .footer_bottom_left img {
+		display: none;
+	}
+	.footer .footer_bottom {
+		flex-wrap: wrap;
+		gap: 25px 0;
+		justify-content: space-between;
+	}
+	.video .video_block iframe {
+		height: 180px;
+	}
+	.video .video_title {
+		line-height: 38px;
+		font-size: 34px;
+	}
+	.footer .footer_bottom_left {
+		justify-content: space-between;
+	}
+	.footer_bottom_right,
+	.footer .footer_bottom_left {
+		width: 100%;
+	}
+	.footer .footer_socials {
+		justify-content: end;
+	}
+	.partners .partner_block {
+		gap: 20px 30px;
+	}
+	.partners .partner_name {
+		font-size: 21px;
+	}
+	.partner_img img {
+		max-width: 33px;
+	}
+	.partners .partner_item {
+		gap: 10px;
+	}
+	.faq .faq_title {
+		font-size: 35px;
+		margin-bottom: 35px;
+		text-align: left;
+	}
 	header {
 		margin: 40px 0 75px 0;
+	}
+	header .header_block {
+		padding: 10px;
+		backdrop-filter: blur(177.8px);
+		background: rgba(26, 29, 37, 0.51);
+	}
+	header .header_right {
+		gap: 25px;
+	}
+	.faq .faq_block {
+		gap: 20px;
+	}
+	.faq .faq_body p {
+		margin-top: 10px;
 	}
 	.referal .referal_title {
 		font-size: 35px;
@@ -266,12 +358,15 @@
 	}
 	.hero .hero_title {
 		font-size: 35px;
-		max-width: 80%;
+		max-width: 304px;
 		margin: 0 auto 25px auto;
 	}
 	.hero .hero_desc {
 		font-size: 16px;
 		margin-bottom: 40px;
+	}
+	.profit .calc_top {
+		margin-bottom: 20px;
 	}
 	.hero .hero_buttons {
 		margin-bottom: 150px;

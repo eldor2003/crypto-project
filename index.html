@@ -38,13 +38,22 @@
                         <li><a href="#">Market</a></li>
                         <li><a href="#">Trade</a></li>
                         <li><a href="#">FAQ</a></li>
+                        <div class="header_buttons d-flex d-md-none">
+                            <a href="#" class="login">Join</a>
+                            <a href="#" class="market">Market</a>
+                        </div>
                     </ul>
                     <div class="header_right d-flex align-items-center">
                         <div class="language d-flex align-items-center">
                             <img src="./assets/images/icons/Flags.svg" alt="">
                             <span>EU</span>
                         </div>
-                        <div class="header_buttons d-flex">
+                        <div class="hamburger_icon d-md-none">
+                            <a href="#">
+                                <img src="./assets/images/icons/hamburger.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header_buttons d-md-flex d-none">
                             <a href="#" class="login">Join</a>
                             <a href="#" class="market">Market</a>
                         </div>
@@ -113,7 +122,8 @@
                         <p class="trading_left_desc">
                             Affordable trading for everyone, use automated trading to increase your budget
                         </p>
-                        <a href="#" class="trading_left_btn d-inline-flex align-items-center justify-content-center">
+                        <a href="#"
+                            class="trading_left_btn d-none d-sm-inline-flex align-items-center justify-content-center">
                             <span>To the market</span>
                             <img src="./assets/images/icons/to_market_icon.svg" alt="">
                         </a>
@@ -149,6 +159,11 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#"
+                        class="trading_left_btn d-inline-flex d-sm-none align-items-center justify-content-center">
+                        <span>To the market</span>
+                        <img src="./assets/images/icons/to_market_icon.svg" alt="">
+                    </a>
                 </div>
             </div>
         </section>
@@ -156,6 +171,12 @@
         <!-- profit -->
         <section class="profit">
             <div class="container">
+                <div class="profit_title">Unleash <span class="blue">your
+                        expected profitability</span>
+                </div>
+                <div class="prof_desc">
+                    Earn a stable income with us today.
+                </div>
                 <div class="profit_block d-flex justify-content-between">
                     <div class="profit_calculator">
                         <div class="calc_top d-flex justify-content-between align-content-center">

@@ -453,7 +453,6 @@ header .market {
   border-radius: 50%;
   flex: 0 0 auto;
   background: rgba(9, 151, 124, 0.1);
-  background: rgba(18, 93, 79, 0.836);
 }
 .trading .right_name {
   color: rgb(255, 255, 255);
@@ -484,6 +483,22 @@ header .market {
           backdrop-filter: blur(177.8px);
   padding: 20px;
   background: rgba(26, 29, 37, 0.31);
+}
+.profit .profit_title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 115%;
+  margin-bottom: 25px;
+  max-width: 530px;
+  color: #fff;
+}
+.profit .prof_desc {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 50px;
 }
 .profit .calc_top {
   margin-bottom: 30px;
@@ -945,24 +960,378 @@ header .market {
   .container {
     max-width: 1140px;
   }
+  .hands_block .left_hand {
+    top: 725px;
+    left: -150px;
+  }
+  .hands_block .left_hand.active {
+    left: -70px;
+  }
+  .hands_block .left_hand img {
+    width: 400px;
+  }
+  .hands_block .right_hand {
+    right: -200px;
+  }
+  .hands_block .right_hand img {
+    width: 500px;
+  }
+  .hands_block .right_hand.active {
+    right: -150px;
+  }
 }
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  body {
+    background-size: cover;
+  }
+  .hero .hero_title {
+    font-size: 48px;
+    margin: 0 auto 25px auto;
+  }
+  .profit .profit_calculator {
+    width: 100%;
+  }
+  .profit .profit_block {
+    flex-direction: column-reverse;
+  }
+  .profit_payment {
+    width: 68%;
+    margin: 0 auto;
+  }
+  .profit {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
   }
+  .footer {
+    padding: 20px;
+  }
+  .footer .footer_desc {
+    max-width: 230px;
+  }
+  .video .video_block iframe {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .referal_block {
+    flex-wrap: wrap;
+    gap: 35px 0;
+  }
+  .referal .referal_item {
+    width: 48%;
+    min-height: 260px;
+  }
+  .profit_payment {
+    width: 87%;
+  }
+  .trading .trading_block {
+    gap: 30px;
+  }
+  header .header_navs {
+    gap: 15px;
+  }
+  .video .video_title {
+    margin-bottom: 30px;
+  }
+  .hero .core_img img {
+    width: 200px;
+  }
+  header .market {
+    width: 80px;
+    padding: 6px 0;
+  }
+  header .login {
+    width: 80px;
+    padding: 6px 0;
+  }
+  .hands_block .left_hand {
+    top: 600px;
+    left: -100px;
+  }
+  .hands_block .left_hand.active {
+    left: -70px;
+  }
+  .hands_block .left_hand img {
+    width: 300px;
+  }
+  .hands_block .right_hand {
+    top: 360px;
+    right: -100px;
+  }
+  .hands_block .right_hand img {
+    width: 300px;
+  }
+  .hands_block .right_hand.active {
+    right: -70px;
+  }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
   }
+  .partners .partner_block {
+    gap: 30px 17px;
+  }
+  .footer .footer_top {
+    padding-bottom: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .trading,
+  .partners,
+  .faq {
+    margin-bottom: 70px;
+  }
+  .profit_payment {
+    width: 100%;
+  }
+  .header_navs {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 0;
+    right: -100%;
+    z-index: 4;
+    width: 50%;
+    padding-top: 100px;
+    height: 100vh;
+    z-index: 4;
+    background-color: #614848;
+  }
+  .trading .trading_left {
+    width: 100%;
+  }
+  .trading .trading_block {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .video {
+    margin-bottom: 70px;
+  }
+  .video .video_title {
+    font-size: 35px;
+  }
 }
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+    padding: 0 25px;
+  }
+  .footer .footer_top {
+    gap: 30px 0;
+  }
+  .footer .footer_item {
+    width: 100%;
+  }
+  .referal {
+    margin-bottom: 70px;
+  }
+  .footer .copyright,
+  .footer .gate {
+    font-size: 16px;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+  .footer .footer_bottom_left img {
+    display: none;
+  }
+  .footer .footer_bottom {
+    flex-wrap: wrap;
+    gap: 25px 0;
+    justify-content: space-between;
+  }
+  .video .video_block iframe {
+    height: 180px;
+  }
+  .video .video_title {
+    line-height: 38px;
+    font-size: 34px;
+  }
+  .footer .footer_bottom_left {
+    justify-content: space-between;
+  }
+  .footer_bottom_right,
+  .footer .footer_bottom_left {
+    width: 100%;
+  }
+  .footer .footer_socials {
+    justify-content: end;
+  }
+  .partners .partner_block {
+    gap: 20px 30px;
+  }
+  .partners .partner_name {
+    font-size: 21px;
+  }
+  .partner_img img {
+    max-width: 33px;
+  }
+  .partners .partner_item {
+    gap: 10px;
+  }
+  .faq .faq_title {
+    font-size: 35px;
+    margin-bottom: 35px;
+    text-align: left;
+  }
+  header {
+    margin: 40px 0 75px 0;
+  }
+  header .header_block {
+    padding: 10px;
+    -webkit-backdrop-filter: blur(177.8px);
+            backdrop-filter: blur(177.8px);
+    background: rgba(26, 29, 37, 0.51);
+  }
+  header .header_right {
+    gap: 25px;
+  }
+  .faq .faq_block {
+    gap: 20px;
+  }
+  .faq .faq_body p {
+    margin-top: 10px;
+  }
+  .referal .referal_title {
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+  .profit .profit_title {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .referal .referal_item {
+    width: 100%;
+    min-height: 260px;
+  }
+  .profit .prof_desc {
+    font-size: 16px;
+  }
+  .profit .method_name {
+    font-size: 11px;
+  }
+  .profit .method_block {
+    padding: 15px 20px 20px 15px;
+  }
+  .profit .method_images .img_item {
+    width: 31.38px;
+    height: 31.43px;
+  }
+  .profit .method_images .img_item img {
+    max-width: 19px;
+  }
+  .profit .pay_title {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .profit .count_pay {
+    font-size: 10.46px;
+    line-height: 14.38px;
+  }
+  .profit .name_pay {
+    font-size: 7.84px;
+  }
+  .profit .type_img img,
+  .profit .type_img {
+    width: 30px;
+  }
+  .profit .types_money span {
+    font-size: 9.15px;
+  }
+  .payment_circle {
+    max-width: 500px;
+  }
+  .profit .pay_block {
+    padding: 15px;
+  }
+  .trading .moment {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .trading .trading_left_title {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .trading .trading_left_desc {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .trading .right_name {
+    font-size: 18px;
+  }
+  .trading .right_desc {
+    font-size: 16px;
+  }
+  .profit .calc {
+    padding: 8px 0px;
+    font-size: 10px;
+    line-height: 15px;
+    border-radius: 7.37px;
+    width: 60px;
+  }
+  .language img {
+    width: 35px;
+  }
+  .profit .profit_form {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  .profit .calc_bottom button {
+    padding: 6px 17px;
+  }
+  .profit .calc_bottom p {
+    font-size: 10px;
+  }
+  .hero .hero_title {
+    font-size: 35px;
+    max-width: 304px;
+    margin: 0 auto 25px auto;
+  }
+  .hero .hero_desc {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .profit .calc_top {
+    margin-bottom: 20px;
+  }
+  .hero .hero_buttons {
+    margin-bottom: 150px;
+  }
+  .hands_block .left_hand {
+    top: 700px;
+    left: -50px;
+  }
+  .hands_block .left_hand.active {
+    left: -25px;
+  }
+  .hands_block .left_hand img {
+    width: 200px;
+  }
+  .hero {
+    margin-bottom: 110px;
+  }
+  .hands_block .right_hand {
+    top: 500px;
+    right: -50px;
+  }
+  .hands_block .right_hand img {
+    width: 200px;
+  }
+  .hands_block .right_hand.active {
+    right: -10px;
+  }
+  .hero .core_img img {
+    width: 130px;
   }
 }
