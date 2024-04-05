@@ -78,4 +78,20 @@ $(document).ready(function () {
 		alert(result);
 		$(".result").val();
 	});
+
+	const mediaQuery = window.matchMedia("(max-width: 576px)");
+	// Check if the media query is true
+	if (mediaQuery.matches) {
+		$(window).scroll(function (event) {
+			var scroll = $(window).scrollTop();
+			console.log(scroll);
+			if (scroll > 900) {
+				$(".left_hand").removeClass("active");
+				$(".right_hand").removeClass("active");
+			} else if (scroll < 900) {
+				$(".left_hand").toggleClass("active");
+				$(".right_hand").toggleClass("active");
+			}
+		});
+	}
 });
