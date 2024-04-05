@@ -17,6 +17,13 @@ $(document).ready(function () {
 		$(this).addClass("active");
 	});
 
+	// trading items
+	$(".trading_right_item ").on("click", function (e) {
+		e.preventDefault();
+		$(".trading_right_item").removeClass("active");
+		$(this).addClass("active");
+	});
+
 	// faq
 	$(".faq_head").on("click", function (e) {
 		e.preventDefault();

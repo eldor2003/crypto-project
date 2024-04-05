@@ -326,6 +326,7 @@ header {
 		justify-content: space-between;
 	}
 	.input_block {
+		flex: 1;
 		label {
 			display: flex;
 			flex-direction: column;
@@ -336,6 +337,7 @@ header {
 				font-weight: 600;
 			}
 			input {
+				width: 100%;
 				background-color: transparent;
 				border: none;
 				height: 20px;
@@ -346,6 +348,10 @@ header {
 				&::placeholder {
 					color: #fff;
 					font-weight: 600;
+				}
+				&::-webkit-outer-spin-button,
+				&::-webkit-inner-spin-button {
+					-webkit-appearance: none;
 				}
 			}
 		}

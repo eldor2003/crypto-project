@@ -527,6 +527,9 @@ header .market {
   align-items: center;
   justify-content: space-between;
 }
+.profit .input_block {
+  flex: 1;
+}
 .profit .input_block label {
   display: flex;
   flex-direction: column;
@@ -538,6 +541,7 @@ header .market {
   font-weight: 600;
 }
 .profit .input_block label input {
+  width: 100%;
   background-color: transparent;
   border: none;
   height: 20px;
@@ -553,6 +557,9 @@ header .market {
 .profit .input_block label input::placeholder {
   color: #fff;
   font-weight: 600;
+}
+.profit .input_block label input::-webkit-outer-spin-button, .profit .input_block label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 .profit .calc_bottom button {
   padding: 17px 15px;
