@@ -60,4 +60,30 @@ $(document).ready(function () {
 		$(".left_hand").removeClass("active");
 		$(".right_hand").removeClass("active");
 	});
+
+	// calculator
+	$(".calc_bottom button").on("click", function (e) {
+		e.preventDefault();
+		let cellsCost = 1; // Cost per cell
+		let tonAmount = document.querySelector("input[type=amount]"); // Deposit
+		let cellsProfit = 0.02; // Profit margin per cell
+
+		let laps = document.querySelector("input[type=laps]"); // Number of purchases
+
+		function calc(cellsCost, tonAmount, cellsProfit, laps) {
+			if (laps === 0) {
+				let cellsAmount = tonAmount / cellsCost;
+				let result = tonAmount + cellsProfit * cellsCost * cellsAmount;
+				return result;
+			} else {
+				let cellsAmount = tonAmount / cellsCost;
+				let balance = tonAmount + cellsProfit * cellsCost * cellsAmount;
+				return calc(cellsCost, balance, cellsProfit, laps - 1);
+			}
+		}
+
+		let res = calc(cellsCost, tonAmount, cellsProfit, laps);
+		$("input[type=result]").val(Number(res));
+		console.log(res);
+	});
 });
