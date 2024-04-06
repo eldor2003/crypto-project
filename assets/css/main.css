@@ -270,8 +270,8 @@ header .login {
   border-radius: 5px;
   -webkit-backdrop-filter: blur(74.6px);
           backdrop-filter: blur(74.6px);
-  padding: 10px 0;
-  width: 130px;
+  padding: 10px 10px;
+  min-width: 130px;
   text-align: center;
   transition: all ease-in 0.1s;
 }
@@ -323,7 +323,7 @@ header .market {
   line-height: 105%;
   text-align: center;
   color: #f7f7f7;
-  max-width: 500px;
+  max-width: 650px;
   margin: 0 auto 50px auto;
 }
 .hero .hero_desc {

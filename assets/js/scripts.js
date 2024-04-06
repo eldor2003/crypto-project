@@ -65,11 +65,10 @@ $(document).ready(function () {
 	});
 
 	// calculator
-	$(".calc_bottom button").on("click", function (e) {
-		e.preventDefault();
-		let tonAmount = document.querySelector(".amount").value * 1; // Deposit
+	function calculateResult() {
+		let tonAmount = parseFloat($(".amount").val()) || 0; // Deposit
 		let cellsProfit = 0.02; // Profit margin per cell
-		let laps = document.querySelector(".laps").value * 1; // Number of purchases
+		let laps = parseFloat($(".laps").val()) || 0; // Number of purchases
 		let cellsCost = 1; // Cost per cell
 
 		function calc(cellsCost, tonAmount, cellsProfit, laps) {
@@ -86,8 +85,22 @@ $(document).ready(function () {
 				return calc(cellsCost, balance, cellsProfit, laps - 1);
 			}
 		}
+
 		let res = calc(cellsCost, tonAmount, cellsProfit, laps).toFixed(2);
 		$(".result").val(res);
+	}
+
+	// Initial calculation when the page loads
+	calculateResult();
+
+	// Event listener for changes in the amount input
+	$(".amount").on("input", function () {
+		calculateResult();
+	});
+
+	// Event listener for changes in the laps input
+	$(".laps").on("input", function () {
+		calculateResult();
 	});
 
 	const mediaQuery = window.matchMedia("(max-width: 576px)");
