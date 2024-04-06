@@ -5,20 +5,17 @@ $(document).ready(function () {
 		$(".mobile_block").addClass("active");
 	});
 
-	$(".close , .mobile_navigation li a").on("click", function (e) {
+	$(".close").on("click", function (e) {
 		e.preventDefault();
 		$(".mobile_block").removeClass("active");
 	});
 
-	// $(".mobile_navigation li a").on("click", function (e) {
-	// 	e.preventDefault();
-	// 	$(".mobile_navigation li a").removeClass("active");
-	// 	$(this).addClass("active");
-	// });
+	$(".mobile_navigation li a").on("click", function (e) {
+		$(".mobile_block").removeClass("active");
+	});
 
 	// header navs
 	$(".header_navs li a").on("click", function (e) {
-		e.preventDefault();
 		$(".header_navs li a").removeClass("active");
 		$(this).addClass("active");
 	});

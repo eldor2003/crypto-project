@@ -78,6 +78,7 @@ video {
 
 body {
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 article,
