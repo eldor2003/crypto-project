@@ -111,7 +111,7 @@ const local = {
 		Video: {
 			headerVideo: "Что такое Gate?",
 			ButtonVideo: {
-				moment: "MOMENT 1.0",
+				moment: "МОМЕНТ 1.0",
 			},
 		},
 		Trade: {
