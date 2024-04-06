@@ -124,6 +124,10 @@ q:after {
   padding: 0;
 }
 
+.hands_block.ru .left_hand {
+  top: 770px;
+}
+
 a {
   margin: 0;
   padding: 0;
@@ -1025,6 +1029,9 @@ header .market {
   }
   .hands_block .left_hand img {
     width: 600px;
+  }
+  .hands_block.ru .right_hand {
+    top: 400px;
   }
   .hands_block .right_hand {
     top: 200px;
