@@ -46,6 +46,9 @@
 	.container {
 		max-width: 960px;
 	}
+	.hands_block.ru .right_hand {
+		top: 380px;
+	}
 	body {
 		background-size: cover;
 	}
@@ -70,6 +73,12 @@
 @media (max-width: 992px) {
 	.container {
 		max-width: 720px;
+	}
+	.hands_block.ru .left_hand {
+		top: 650px;
+	}
+	.hands_block.ru .right_hand {
+		top: 450px;
 	}
 	.footer {
 		padding: 20px;
@@ -148,6 +157,15 @@
 	}
 	.profit .right_icon {
 		right: 0;
+	}
+	.hands_block.ru .left_hand {
+		top: 700px;
+	}
+	.hands_block.ru .left_hand.active {
+		left: -100px;
+	}
+	.hands_block.ru .right_hand {
+		top: 510px;
 	}
 	.profit .left_icon {
 		top: 20px;
@@ -283,6 +301,19 @@
 	.mobile_block {
 		width: 100%;
 	}
+	.hands_block.ru .right_hand {
+		top: 590px;
+		right: -60px;
+	}
+	.hands_block.ru .left_hand.active {
+		left: -30px;
+	}
+	.hands_block.ru .right_hand.active {
+		right: -30px;
+	}
+	.hands_block.ru .left_hand {
+		top: 820px;
+	}
 	.footer .footer_top {
 		gap: 30px 0;
 	}
@@ -361,6 +392,7 @@
 	.referal .referal_title {
 		font-size: 35px;
 		margin-bottom: 35px;
+		line-height: 1.1;
 	}
 	.profit .profit_title {
 		font-size: 35px;

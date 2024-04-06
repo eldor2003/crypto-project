@@ -150,22 +150,21 @@ $(document).ready(function () {
 });
 // localStorage.setItem("lang");
 
-// let langs = localStorage.getItem("lang");
-// $("#mySelect").on("change", function () {
-// 	let selectedValue = $(this).val();
-// 	localStorage.setItem("lang", selectedValue);
-// 	location.reload();
-// });
+let langs = localStorage.getItem("lang");
+$("#mySelect").on("change", function () {
+	let selectedValue = $(this).val();
+	localStorage.setItem("lang", selectedValue);
+	location.reload();
+});
+
 if (langs == "en") {
-	// $(".list li:first").addClass("selected");
-	$(".mySelect option:first").attr("selected", "selected");
-	// $(".mySelect option:last").removeAttr("selected");
-	console.log(1);
+	$("#mySelect option[value='en']").attr("selected", "selected");
+	$("#mySelect option[value='ru']").removeAttr("selected");
+	$(".hands_block").removeClass("ru");
 } else if (langs == "ru") {
-	// $(".list li:last").addClass("selected");
-	$(".mySelect option:last").attr("selected", "selected");
-	// $(".mySelect option:first").removeAttr("selected");
-	console.log(2);
+	$(".hands_block").addClass("ru");
+	$("#mySelect option[value='ru']").attr("selected", "selected");
+	$("#mySelect option[value='en']").removeAttr("selected");
 }
 function setLanguage(lang) {
 	const langData = local[lang]; // Get localization data for the selected language
