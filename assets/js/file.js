@@ -150,16 +150,22 @@ $(document).ready(function () {
 });
 // localStorage.setItem("lang");
 
-let langs = localStorage.getItem("lang");
-$("#mySelect").on("change", function () {
-	let selectedValue = $(this).val();
-	localStorage.setItem("lang", selectedValue);
-	location.reload();
-});
+// let langs = localStorage.getItem("lang");
+// $("#mySelect").on("change", function () {
+// 	let selectedValue = $(this).val();
+// 	localStorage.setItem("lang", selectedValue);
+// 	location.reload();
+// });
 if (langs == "en") {
-	$(".list li:first").addClass("selected");
+	// $(".list li:first").addClass("selected");
+	$(".mySelect option:first").attr("selected", "selected");
+	// $(".mySelect option:last").removeAttr("selected");
+	console.log(1);
 } else if (langs == "ru") {
-	$(".list li:last").addClass("selected");
+	// $(".list li:last").addClass("selected");
+	$(".mySelect option:last").attr("selected", "selected");
+	// $(".mySelect option:first").removeAttr("selected");
+	console.log(2);
 }
 function setLanguage(lang) {
 	const langData = local[lang]; // Get localization data for the selected language
