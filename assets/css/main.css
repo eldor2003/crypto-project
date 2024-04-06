@@ -499,6 +499,9 @@ header .market {
 .profit .profit_block {
   gap: 60px;
 }
+.profit .img_item {
+  transform: rotate(-5deg);
+}
 .profit .profit_calculator {
   flex: 0 0 auto;
   width: 46%;

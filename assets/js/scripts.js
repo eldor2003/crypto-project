@@ -72,11 +72,25 @@ $(document).ready(function () {
 		e.preventDefault();
 		let tonAmount = document.querySelector(".amount").value * 1; // Deposit
 		let cellsProfit = 0.02; // Profit margin per cell
-
 		let laps = document.querySelector(".laps").value * 1; // Number of purchases
-		let result = (tonAmount + cellsProfit).toFixed(2);
-		alert(result);
-		$(".result").val();
+		let cellsCost = 1; // Cost per cell
+
+		function calc(cellsCost, tonAmount, cellsProfit, laps) {
+			if (laps === 0) {
+				// Base case: no more laps, calculate final balance
+				let cellsAmount = tonAmount / cellsCost;
+				let result = tonAmount + cellsProfit * cellsCost * cellsAmount;
+				return result;
+			} else {
+				// Perform one transaction (lap)
+				let cellsAmount = tonAmount / cellsCost;
+				let balance = tonAmount + cellsProfit * cellsCost * cellsAmount;
+				// Recursively calculate for the next lap
+				return calc(cellsCost, balance, cellsProfit, laps - 1);
+			}
+		}
+		let res = calc(cellsCost, tonAmount, cellsProfit, laps).toFixed(2);
+		$(".result").val(res);
 	});
 
 	const mediaQuery = window.matchMedia("(max-width: 576px)");
