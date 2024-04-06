@@ -106,6 +106,15 @@ q:after {
 	content: " ";
 	content: none;
 }
+.nice-select .option.focus,
+.nice-select .option.selected.focus,
+.nice-select .option:hover,
+.nice-select .list {
+	background: #626287;
+}
+// .nice-select .option.selected {
+// 	display: none;
+// }
 .container-fluid {
 	margin: 0;
 	padding: 0;

@@ -144,7 +144,23 @@ const local = {
 		},
 	},
 };
-let langs = localStorage.getItem("lang") || "en";
+// nice select
+$(document).ready(function () {
+	$("select").niceSelect();
+});
+// localStorage.setItem("lang");
+
+let langs = localStorage.getItem("lang");
+$("#mySelect").on("change", function () {
+	let selectedValue = $(this).val();
+	localStorage.setItem("lang", selectedValue);
+	location.reload();
+});
+if (langs == "en") {
+	$(".list li:first").addClass("selected");
+} else if (langs == "ru") {
+	$(".list li:last").addClass("selected");
+}
 function setLanguage(lang) {
 	const langData = local[lang]; // Get localization data for the selected language
 

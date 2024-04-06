@@ -112,6 +112,13 @@ q:after {
   content: none;
 }
 
+.nice-select .option.focus,
+.nice-select .option.selected.focus,
+.nice-select .option:hover,
+.nice-select .list {
+  background: #626287;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -231,6 +238,49 @@ header .header_block {
   justify-content: space-between;
   padding: 5px 5px 5px 48px;
 }
+header .nice-select {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+header .current {
+  color: rgb(241, 241, 241);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header .current img {
+  max-width: 42px;
+}
+header .nice-select .list {
+  margin-top: 0;
+}
+header .nice-select .option {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  gap: 12px;
+  padding: 5px 10px;
+  min-height: unset;
+  color: #fff;
+  background: #626287;
+}
+header .nice-select .option img {
+  max-width: 42px;
+}
+header .nice-select .option:hover {
+  background: #626287;
+}
+header .nice-select:after {
+  content: none;
+}
 header .header_navs {
   gap: 60px;
 }
@@ -244,17 +294,8 @@ header .header_navs li a {
 header .header_navs li a:hover, header .header_navs li a.active {
   color: rgb(137, 154, 198);
 }
-header .language {
-  gap: 12px;
-}
-header .language span {
-  color: rgb(241, 241, 241);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
 header .header_right {
-  gap: 20px;
+  gap: 35px;
 }
 header .header_buttons {
   gap: 7px;
