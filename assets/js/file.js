@@ -247,7 +247,7 @@ function setLanguage(lang) {
 	$(".result_title").text(langData.Profitability.result);
 	$(".method_name").text(langData.Profitability.payMethod);
 	$(".pay_title").text(langData.Profitability.cash);
-	$(".calc_bottom button").text(langData.Trade.ButtonTrade.marketTrade);
+	// $(".calc_bottom button").text(langData.Trade.ButtonTrade.marketTrade);
 	$(".ref_count span").text(langData.Referral.referalNumber);
 	$(".registr").text(langData.Referral.registration);
 	$(".ref_partners").text(langData.Referral.partner);
